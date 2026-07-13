@@ -49,7 +49,7 @@ against.
 ## Publishing a fixture
 
 Each demo is its **own** GitHub release — one release per fixture, with the tag
-equal to the asset name (minus `.dem`). No compression is needed: a CS2 demo is
+equal to the asset name (minus `.dem`). No compression is needed: a normal CS2 demo is
 well under GitHub's 2 GB per-asset limit, and release assets don't count against
 repo size. (Compress with `zstd`/`bzip2` only if you specifically want smaller
 downloads — the raw `.dem` keeps the Awpy-side downloader dependency-free.)
@@ -103,4 +103,4 @@ flashes) the more the fixture can test. Mirror the entry as a row in the
 ## License
 
 Demo files remain the property of their respective owners and are included here
-solely for automated testing. Only add demos you have the right to redistribute.
+solely for automated testing.
