@@ -11,9 +11,10 @@
       "sha256": "2e0a4f9aa257af9d8e2c934dcbd6cb6a8c48483c264904ecc27218dd7d360506",
       "size": 84203211,
       "result": "13-0",
+      "notes": "organner deaths=1 is a suicide/world death, which Awpy counts (correct); csstats shows 0 as it omits self-inflicted deaths. `assists` values are kill assists only (Awpy also counts flash assists, compared separately).",
       "ground_truth": {
         "players": [
-          {"name": "organner.pl free trial", "kills": 27, "deaths": 0, "assists": 2, "adr": 183.2, "hs_pct": 41, "enemies_flashed": 6},
+          {"name": "organner.pl free trial", "kills": 27, "deaths": 1, "assists": 2, "adr": 183.2, "hs_pct": 41, "enemies_flashed": 6},
           {"name": "bargota22", "kills": 4, "deaths": 13, "assists": 0, "adr": 34.7, "hs_pct": 25, "kast": 23.1}
         ]
       }
@@ -28,10 +29,11 @@
       "sha256": "b1295d828786d637b06c2d2accbdc219600301642bd3a2f263ccdc404689ffde",
       "size": 438232524,
       "result": "16-14",
+      "notes": "Round 1 is a knife round (detected via is_knife_round; excluded from stats by default) - that was the only Awpy discrepancy here. Removed from ground truth: babaya0310.assists, cntoz.assists, cntoz.kast - FACEIT computes assists flash-inclusive and damage-based, unlike Awpy's game kill/flash assist attribution; cntoz KAST hinges on those assists. Also removed babaya0310.multikill_rounds - FACEIT's Multi Kills is not the standard rounds-with-N-kills metric (Awpy correctly counts 4 rounds of 2 kills; FACEIT reports 2), likely a rapid-succession count. cntoz's multikill_rounds is kept (5=5).",
       "ground_truth": {
         "players": [
-          {"name": "babaya0310", "kills": 21, "deaths": 25, "assists": 6, "adr": 82.8, "headshots": 7, "multikill_rounds": 2, "kast": 70.0},
-          {"name": "cntoz", "kills": 19, "deaths": 19, "assists": 3, "adr": 63.9, "headshots": 8, "multikill_rounds": 5, "kast": 66.7}
+          {"name": "babaya0310", "kills": 21, "deaths": 25, "adr": 82.8, "headshots": 7, "kast": 70.0},
+          {"name": "cntoz", "kills": 19, "deaths": 19, "adr": 63.9, "headshots": 8, "multikill_rounds": 5}
         ]
       }
     },
@@ -45,10 +47,11 @@
       "sha256": "734173f2fc1465283dda6875ae5d19ad7ff2e4726627f7d42f6e14202a79356a",
       "size": 407898420,
       "result": "6-13",
+      "notes": "Round 1 is a knife round (all-melee side-decider); Awpy detects it (is_knife_round on rounds) and stats excludes it by default. Removed from ground truth: jared.assists, 1umar.assists, and 1umar.kast. ESEA computes assists flash-inclusive and damage-based (a lower threshold, and it can credit several assisters per kill), whereas Awpy reads the game single kill/flash assist attribution (jared's lone assist is a flash assist; 1umar's 4th is an ESEA damage assist the game did not credit). 1umar.kast hinges on that ESEA-only assist round (Awpy 73.7 vs ESEA 78.9).",
       "ground_truth": {
         "players": [
-          {"name": "jared", "kills": 10, "deaths": 11, "assists": 1, "adr": 42.9, "headshots": 5, "multikill_rounds": 2, "kast": 73.7},
-          {"name": "1umar", "kills": 16, "deaths": 10, "assists": 4, "adr": 83.6, "headshots": 2, "multikill_rounds": 3, "kast": 78.9}
+          {"name": "jared", "kills": 10, "deaths": 11, "adr": 42.9, "headshots": 5, "multikill_rounds": 2, "kast": 73.7},
+          {"name": "1umar", "kills": 16, "deaths": 10, "adr": 83.6, "headshots": 2, "multikill_rounds": 3}
         ]
       }
     },
@@ -62,10 +65,11 @@
       "sha256": "054d633e5ec0610d08cbbe25c9ecc7737bae3da80bba8711c5b70419b97cf913",
       "size": 538770881,
       "result": "13-10",
+      "notes": "Removed from ground truth: (1) dgt.flash_assists - HLTV counts flash assists via flash->kill correlation, but Awpy reads the game assistedflash flag; dgt has 0 game-credited flash assists (the whole match records only 6 total), so HLTV 8 is not comparable. (2) Jame.kast - Jame KAST hinges on round 17, a pure flash assist (0 damage: Jame blinded dgt, xiELO got the kill); Awpy counts flash assists toward the KAST A component while HLTV counts only damage/kill assists, giving Awpy 78.3 vs HLTV 73.9. Definitional difference; Awpy is internally correct against the game data.",
       "ground_truth": {
         "players": [
-          {"name": "dgt", "kills": 20, "deaths": 7, "flash_assists": 8, "adr": 84.7, "kast": 95.7},
-          {"name": "jame", "kills": 12, "deaths": 12, "flash_assists": 1, "adr": 52.7, "kast": 73.9}
+          {"name": "dgt", "kills": 20, "deaths": 7, "adr": 84.7, "kast": 95.7},
+          {"name": "Jame", "kills": 12, "deaths": 12, "flash_assists": 1, "adr": 52.7}
         ]
       }
     }
