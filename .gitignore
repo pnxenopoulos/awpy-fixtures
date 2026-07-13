@@ -1,0 +1,7 @@
+# Fixtures live in GitHub releases, not in git — so ignore everything...
+*
+
+# ...except the docs and manifest (and this ignore file itself).
+!README.md
+!manifest.json
+!.gitignore

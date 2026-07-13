@@ -1,0 +1,73 @@
+{
+  "repo": "pnxenopoulos/awpy-fixtures",
+  "fixtures": [
+    {
+      "name": "valve-de_mirage-472514809",
+      "asset": "valve-de_mirage-472514809.dem",
+      "source": "valve",
+      "map": "de_mirage",
+      "match_url": "https://csstats.gg/match/472514809",
+      "url": "https://github.com/pnxenopoulos/awpy-fixtures/releases/download/valve-de_mirage-472514809/valve-de_mirage-472514809.dem",
+      "sha256": "2e0a4f9aa257af9d8e2c934dcbd6cb6a8c48483c264904ecc27218dd7d360506",
+      "size": 84203211,
+      "result": "13-0",
+      "ground_truth": {
+        "players": [
+          {"name": "organner.pl free trial", "kills": 27, "deaths": 0, "assists": 2, "adr": 183.2, "hs_pct": 41, "enemies_flashed": 6},
+          {"name": "bargota22", "kills": 4, "deaths": 13, "assists": 0, "adr": 34.7, "hs_pct": 25, "kast": 23.1}
+        ]
+      }
+    },
+    {
+      "name": "faceit-de_mirage-6de46e85",
+      "asset": "faceit-de_mirage-6de46e85.dem",
+      "source": "faceit",
+      "map": "de_mirage",
+      "match_url": "https://www.faceit.com/en/cs2/room/1-6de46e85-0b21-420d-8c3b-df2737fc0067",
+      "url": "https://github.com/pnxenopoulos/awpy-fixtures/releases/download/faceit-de_mirage-6de46e85/faceit-de_mirage-6de46e85.dem",
+      "sha256": "b1295d828786d637b06c2d2accbdc219600301642bd3a2f263ccdc404689ffde",
+      "size": 438232524,
+      "result": "16-14",
+      "ground_truth": {
+        "players": [
+          {"name": "babaya0310", "kills": 21, "deaths": 25, "assists": 6, "adr": 82.8, "headshots": 7, "multikill_rounds": 2, "kast": 70.0},
+          {"name": "cntoz", "kills": 19, "deaths": 19, "assists": 3, "adr": 63.9, "headshots": 8, "multikill_rounds": 5, "kast": 66.7}
+        ]
+      }
+    },
+    {
+      "name": "esea-de_dust2-2c5bdd12",
+      "asset": "esea-de_dust2-2c5bdd12.dem",
+      "source": "esea",
+      "map": "de_dust2",
+      "match_url": "https://www.faceit.com/en/cs2/room/1-2c5bdd12-6a65-4823-b774-fcf0e257a059",
+      "url": "https://github.com/pnxenopoulos/awpy-fixtures/releases/download/esea-de_dust2-2c5bdd12/esea-de_dust2-2c5bdd12.dem",
+      "sha256": "734173f2fc1465283dda6875ae5d19ad7ff2e4726627f7d42f6e14202a79356a",
+      "size": 407898420,
+      "result": "6-13",
+      "ground_truth": {
+        "players": [
+          {"name": "jared", "kills": 10, "deaths": 11, "assists": 1, "adr": 42.9, "headshots": 5, "multikill_rounds": 2, "kast": 73.7},
+          {"name": "1umar", "kills": 16, "deaths": 10, "assists": 4, "adr": 83.6, "headshots": 2, "multikill_rounds": 3, "kast": 78.9}
+        ]
+      }
+    },
+    {
+      "name": "hltv-de_inferno-2395492",
+      "asset": "hltv-de_inferno-2395492.dem",
+      "source": "hltv",
+      "map": "de_inferno",
+      "match_url": "https://www.hltv.org/matches/2395492/9z-vs-parivision-xse-pro-league-guangzhou-2026",
+      "url": "https://github.com/pnxenopoulos/awpy-fixtures/releases/download/hltv-de_inferno-2395492/hltv-de_inferno-2395492.dem",
+      "sha256": "054d633e5ec0610d08cbbe25c9ecc7737bae3da80bba8711c5b70419b97cf913",
+      "size": 538770881,
+      "result": "13-10",
+      "ground_truth": {
+        "players": [
+          {"name": "dgt", "kills": 20, "deaths": 7, "flash_assists": 8, "adr": 84.7, "kast": 95.7},
+          {"name": "jame", "kills": 12, "deaths": 12, "flash_assists": 1, "adr": 52.7, "kast": 73.9}
+        ]
+      }
+    }
+  ]
+}
