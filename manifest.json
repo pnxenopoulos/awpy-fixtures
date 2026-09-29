@@ -72,6 +72,17 @@
           {"name": "Jame", "kills": 12, "deaths": 12, "flash_assists": 1, "adr": 52.7}
         ]
       }
+    },
+    {
+      "name": "hltv-de_mirage-2394170",
+      "asset": "hltv-de_mirage-2394170.dem",
+      "source": "hltv",
+      "map": "de_mirage",
+      "match_url": "https://www.hltv.org/matches/2394170",
+      "url": "https://github.com/pnxenopoulos/awpy-fixtures/releases/download/hltv-de_mirage-2394170/hltv-de_mirage-2394170.dem",
+      "sha256": "321cfe8bd30501f9040a9ae0cfaca900b6db1cc6cc6ab026f56b86a5b3e20ddc",
+      "size": 347294410,
+      "notes": "B8 vs Vitality, Mirage. Weapon-variant regression: kensizor holds a revolver in round 2 at ticks 15346 and 15391. His active and secondary weapons are revolver; his inventory is knife,revolver."
     }
   ]
 }
